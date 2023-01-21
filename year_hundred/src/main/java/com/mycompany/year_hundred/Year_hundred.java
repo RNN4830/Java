@@ -34,13 +34,22 @@ public class Year_hundred {
     System.out.print("Please enter your age: ");
     age = input.nextInt();
     
+// have you had a birthday this year? true for yes and false for no
+    boolean birthdayYet;
+    System.out.print("Have you had your birthday yet this year? True for yes and False for no:");
+    birthdayYet = input.nextBoolean();   
+    
+    if (birthdayYet == true) {
+        Calendar cal = Calendar.getInstance();   
+        turnHundred = ((cal.get(Calendar.YEAR)) - age) + 100;
+    }else{
+        Calendar cal = Calendar.getInstance();   
+        turnHundred = ((cal.get(Calendar.YEAR)) - age) + 99;
+    }
 
     
-    
-    Calendar cal = Calendar.getInstance();   
-    turnHundred = ((cal.get(Calendar.YEAR)) - age) + 100;
-        
+            
     System.out.println("Hi, " + name + " ,the year that you will turn 100 is: " + turnHundred);  
-    
+   
     }
 }
