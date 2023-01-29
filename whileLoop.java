@@ -2,15 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.rnelsonassignment5;
+package com.mycompany.rnn4830;
 
 /**
  *
- * @author Rachel Nelson
- *         Assignment 5: While Loop
+ * @author RNN4830
+ *         
  *         01/29/2023
  */
-public class RNelsonAssignment5 {
+public class Rnn4830 {
 
     public static void main(String[] args) {
 
