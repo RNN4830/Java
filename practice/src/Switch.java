@@ -12,19 +12,11 @@ public class Switch {
         int switchValue = 4;
         //int switchValue2 = 4; //never use switchValue2
 
-        switch (switchValue){
-            case 1:
-                System.out.println("The value is 1");
-                break;
-            case 2:
-                System.out.println("The value is 2");
-                break;
-            case 3: case 4: case 5:
-                System.out.println("The value is a " + switchValue);
-                break;
-            default:
-                System.out.println("Was not a 1, 2, 3, 4, or 5");
-                break;
+        switch (switchValue) {
+            case 1 -> System.out.println("The value is 1");
+            case 2 -> System.out.println("The value is 2");
+            case 3, 4, 5 -> System.out.println("The value is a " + switchValue);
+            default -> System.out.println("Was not a 1, 2, 3, 4, or 5");
         }
     }
 }
